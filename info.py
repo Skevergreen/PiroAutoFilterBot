@@ -22,7 +22,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '5813755577:AAGMxmce6fAlwImXrCon6z5UexFBHgG
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 # Bot images & videos
-PICS = (environ.get('PICS', 'https://telegra.ph/file/5553dc39f968b364d4856.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/7751d6d5aca96974929d8.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/139bcd87f5604128abd46.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/a2b42475e8486273587de.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/e5fd8c6bc6580bea9fa28.jpg")
@@ -32,7 +32,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001502435182').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL', '-1001764034342')
+auth_channel = environ.get('AUTH_CHANNEL', '-1001801457727)
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
